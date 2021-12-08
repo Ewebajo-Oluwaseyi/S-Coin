@@ -115,7 +115,6 @@ function* changeLeftSidebarType({payload: { sidebarType, isMobile }}) {
             default:
                 yield call(changeBodyAttribute, "data-sidebar-size", "")
                 yield call(manageBodyClass, "sidebar-enable", "remove")
-                if (!isMobile) yield call(manageBodyClass, "vertical-collpsed", "remove")
                 break;
         }
     } catch (error) {
