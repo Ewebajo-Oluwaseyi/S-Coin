@@ -33,7 +33,7 @@ class layout extends Component {
             document.getElementById('status').style.display = 'none'
          }
 
-        document.title = "Responsive Layout";
+        
         window.scrollTo(0, 0);
 
         if(this.props.props.layout.leftSidebarTheme){
