@@ -34,15 +34,15 @@
 
 
 body[data-theme='dark'] {
-    color: #a6b0cf;
+    color: #a6b0cf !important;
 
     .card {
-        background-color: #2a3042;
-        border: 0 solid #32394e;
+        background-color: #2a3042 !important;
+        border: 0 solid #32394e !important;
       }
     .text-muted {
         color: #c3cbe4 !important;
-        --bs-text-opacity: 1;
+        --bs-text-opacity: 1 !important;
     }
       .text-bold {
         color: #c3cbe4 !important;
@@ -51,13 +51,13 @@ body[data-theme='dark'] {
     .table {
         th,
         td {
-          border-color: #32394e;
+          border-color: #32394e !important;
         }
       }
 
       .dropdown-menu {
-        background-color: #2a3042;
-        color: #fff;
-        border: $dropdown-border-width solid #fff;
+        background-color: #2a3042 !important;
+        color: #fff !important;
+        border: $dropdown-border-width solid #fff !important;
       }
 }
