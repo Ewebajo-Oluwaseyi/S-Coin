@@ -1,0 +1,34 @@
+.footer {
+  bottom: 0;
+  padding: 20px calc(#{$grid-gutter-width} / 2);
+  position: absolute;
+  right: 0;
+  color: $footer-color;
+  left: 250px;
+  height: $footer-height;
+  background-color: $footer-bg;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    left: 0;
+  }
+}
+
+.vertical-collpsed {
+  .footer {
+    left: $sidebar-collapsed-width;
+  }
+}
+
+body[data-layout='horizontal'] {
+  .footer {
+    left: 0 !important;
+  }
+}
+
+body[data-theme='dark'] {
+  .footer {
+    background-color: $header-dark-bg;
+  }
+}

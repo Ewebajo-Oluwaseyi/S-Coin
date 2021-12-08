@@ -1,0 +1,64 @@
+/* =============
+   General
+============= */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $gray-700;
+}
+body[data-theme='dark'] {
+  .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #f6f6f6;;
+  }
+  hr {
+    color: inherit;
+    background-color: #a6b0cf;
+    opacity: .2;
+  }
+}
+a {
+  text-decoration: none !important;
+}
+
+label {
+  font-weight: 500;
+}
+
+// blockquote
+
+.blockquote {
+  padding: 10px 20px;
+  border-left: 4px solid $gray-300;
+}
+
+.blockquote-reverse {
+  border-left: 0;
+  border-right: 4px solid $gray-300;
+  text-align: right;
+}
