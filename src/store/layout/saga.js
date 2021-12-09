@@ -14,6 +14,8 @@ import {
     changeTopbarTheme as changeTopbarThemeAction
 } from './actions';
 
+const isMobile =  /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 function changeBodyAttribute(attribute, value) {
     if (document.body) document.body.setAttribute(attribute, value);
 
@@ -93,7 +95,7 @@ function* changeLeftSidebarTheme({payload: theme}){
     }
 }
 
-function* changeLeftSidebarType({payload: { sidebarType, isMobile }}) {
+function* changeLeftSidebarType({payload: { sidebarType }}) {
 
     try {
         switch (sidebarType) {
@@ -115,6 +117,7 @@ function* changeLeftSidebarType({payload: { sidebarType, isMobile }}) {
             default:
                 yield call(changeBodyAttribute, "data-sidebar-size", "")
                 yield call(manageBodyClass, "sidebar-enable", "remove")
+                if (isMobile) yield call(manageBodyClass, "vertical-collpsed", "add")
                 break;
         }
     } catch (error) {

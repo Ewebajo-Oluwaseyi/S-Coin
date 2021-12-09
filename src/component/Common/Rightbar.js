@@ -8,7 +8,7 @@ import layout2 from "../../assests/images/dark.png";
 
 function Rightbar(props) {
 
-    //const isMobile =  /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
     return (
         <React.Fragment>
             <div className="right-bar">
