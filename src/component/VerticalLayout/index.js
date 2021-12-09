@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
-import Footer from './Footer';
 import Rightbar from '../Common/Rightbar'
 import MainContent from '../Common/MainContent'
 import {connect} from "react-redux"
@@ -78,7 +77,6 @@ class layout extends Component {
                     <div className="main-content">
                     <MainContent/>
                     </div>
-                    <Footer/>
                 </div>
                 {this.props.props.layout.showRightSidebar ? <Rightbar/>: null}
             </React.Fragment>
