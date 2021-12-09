@@ -22,13 +22,13 @@ const Buysell = () =>{
             </div>
             <div className="mt-4">
                 <Nav pills className="bg-light rounded" role="tablist" style={{"cursor": "pointer"}}>
-                    <NavItem>
-                        <NavLink className={classnames({ active: state.activeTab === '1' })} onClick={() => { toggleTab('1'); }} >
+                    <NavItem style={{"width": "50%"}}>
+                        <NavLink style={{"display": "flex", "justifyContent": "center"}} className={classnames({ active: state.activeTab === '1' })} onClick={() => { toggleTab('1'); }} >
                             Buy
                         </NavLink>
                     </NavItem>
-                    <NavItem>
-                        <NavLink className={classnames({ active: state.activeTab === '2' })} onClick={() => { toggleTab('2'); }} >
+                    <NavItem style={{"width": "50%"}}>
+                        <NavLink style={{"display": "flex", "justifyContent": "center"}} className={classnames({ active: state.activeTab === '2' })} onClick={() => { toggleTab('2'); }} >
                             Sell
                         </NavLink>
                     </NavItem>
